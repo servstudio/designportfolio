@@ -1,22 +1,16 @@
 import { supabase } from "@/utils/supabase"
 
-const ProjectDetails = ({ project }) => {
-  console.log({ project })
-  return (
-    <div>
-      <h1>{project.title}</h1>
-      <p>{project.year}</p>
-    </div>
-  )
-}
-
-export const getStaticPaths = async () => {
-  const { data: projects } = await supabase.from("project").select("id")
-
+const ProjectDetails = ({ project }) => (
+  <div>
+    <h1 className="text-2xl">{project.title}</h1>
+    <h1>{project.year}</h1>
+  </div>
+)
+export const getStaticPaths = async function () {
+  const { data: projects, error } = await supabase.from("projects").select("id")
   const paths = projects.map((project) => ({
-    return: { params: { id: project.id } },
+    params: { id: project.id.toString() },
   }))
-
   return {
     paths,
     fallback: false,
@@ -25,11 +19,10 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { id } }) => {
   const { data: project } = await supabase
-    .from("project")
+    .from("projects")
     .select("*")
     .eq("id", id)
     .single()
-
   return {
     props: {
       project,
