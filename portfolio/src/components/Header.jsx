@@ -23,8 +23,8 @@ export default function Header() {
             <span className="sr-only">Rich Ekelman's Logo</span>
             <img
               className="h-8 w-auto"
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
+              src="./logomark.png"
+              alt="Rich's Logo Mark"
             />
           </a>
         </div>
@@ -49,11 +49,6 @@ export default function Header() {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
       </nav>
       <Dialog
         as="div"
@@ -68,8 +63,8 @@ export default function Header() {
               <span className="sr-only">Logo</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt=""
+                src="./logomark.png"
+                alt="Rich's Logo"
               />
             </a>
             <button
