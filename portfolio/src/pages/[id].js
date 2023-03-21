@@ -13,10 +13,8 @@ const ProjectDetails = ({ project }) => {
 export const getStaticPaths = async () => {
   const { data: projects } = await supabase.from("project").select("id")
 
-  const paths = projects.map(({ id }) => ({
-    params: {
-      id: id.toString(),
-    },
+  const paths = projects.map((project) => ({
+    return: { params: { id: project.id } },
   }))
 
   return {
