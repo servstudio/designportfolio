@@ -4,6 +4,7 @@ import { Urbanist } from "next/font/google"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header.jsx"
 import Link from "next/link.js"
+import Card from "@/components/Card.jsx"
 // import Card from "@/components/Card.jsx"
 // import Link from "next/link.js"
 
@@ -24,34 +25,32 @@ export default function Home({ projects }) {
       </Head>
       <main className="relative min-h-screen">
         <Header />
-        <section className="">
-          <div
-            className={
-              "grid grid-cols-1 md:grid-cols-2 md:grid-rows-auto gap-8 p-12 md:p-32"
-            }
-          >
-            {projects.map((project) => (
-              // Project Card
-              <>
-                <Link key={project.id} href={`/${project.id}`}>
-                  <div className="flex flex-col hover:shadow-md hover:p-2 ease-in-out duration-300">
-                    <img
-                      className=" bg-cover bg-center rounded-sm"
-                      src={project.key_img}
-                      alt={`${project.title} image`}
-                    ></img>
-                    <div className="pt-2">
-                      <h2 className="text-black text-2xl">{project.title}</h2>
-                      <p className="text-black text-sm line-clamp-2">
-                        {project.blurb}
-                      </p>
-                    </div>
+        <div
+          className={
+            "container mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-auto gap-8 p-12 md:p-32"
+          }
+        >
+          {projects.map((project) => (
+            // Project Card
+            <>
+              <Link key={project.id} href={`/${project.id}`}>
+                <div className="flex flex-col p-4 duration-300 ease-in-out hover:shadow-md">
+                  <img
+                    className="bg-center bg-cover rounded-sm"
+                    src={project.key_img}
+                    alt={`${project.title} image`}
+                  ></img>
+                  <div className="pt-2">
+                    <h2 className="text-2xl text-black">{project.title}</h2>
+                    <p className="text-sm text-black line-clamp-2">
+                      {project.blurb}
+                    </p>
                   </div>
-                </Link>
-              </>
-            ))}
-          </div>
-        </section>
+                </div>
+              </Link>
+            </>
+          ))}
+        </div>
       </main>
       <footer>
         <Footer />

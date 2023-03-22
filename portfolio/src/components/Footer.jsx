@@ -29,9 +29,9 @@ const navigation = {
 
 function Footer() {
   return (
-    <div className="bg-gray-800 p-4">
-      <div className="flex align-baseline justify-between container">
-        <p className=" text-xs leading-8 text-gray-100">
+    <div className="p-4 bg-gray-800">
+      <div className="container flex justify-between mx-auto align-baseline">
+        <p className="text-xs leading-8 text-gray-100">
           &copy; 2023 Rich Ekelman, Inc. All rights reserved.
         </p>
         <div className="flex space-x-6">
@@ -39,27 +39,15 @@ function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-500 hover:text-gray-400"
+              className="text-gray-100 hover:text-gray-400"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6" aria-hidden="true" />
             </a>
           ))}
         </div>
       </div>
     </div>
-    // <div className="bg-gray-800 w-full p-10 justify-center">
-    //   <div className="grid grid-cols-2 grid-flow-col gap-8 justify-center text-center">
-    //     <div className="flex align-baseline space-x-3">
-    //       <p>Made by </p>
-    //       <HandRaisedIcon className="h-6 w-6" /> <p>with</p>
-    //       <HeartIcon className="h-6 w-6" />
-    //       <p>in Wilmington, Delaware.</p>
-    //     </div>
-    //     <br></br>
-    //     <p>Rich Ekelman 2022 All Rights Resevered.</p>
-    //   </div>
-    // </div>
   )
 }
 
