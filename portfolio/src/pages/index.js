@@ -13,12 +13,12 @@ export default function Home({ projects }) {
           <Link key={project.id} href={`/${project.id}`}>
             <div className="flex flex-col p-4 duration-300 ease-in-out bg-white rounded-md stretch hover:shadow-md">
               <img
-                className="object-cover w-full h-48 bg-gray-900 bg-auto rounded-sm"
+                className="object-cover w-full h-48 bg-gray-800 bg-auto rounded-sm"
                 src={project.key_img}
                 alt={`${project.title} image`}
               ></img>
               <div className="pt-2">
-                <h2 className="text-xl font-medium text-black capitalize">
+                <h2 className="text-xl font-medium text-gray-800 capitalize">
                   {project.title}
                 </h2>
                 {/* <p className="text-sm text-black line-clamp-2">
