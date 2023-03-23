@@ -76,7 +76,7 @@ export default function NavBar() {
           </div>
           <div className="flow-root mt-6">
             <div className="-my-6 divide-y divide-gray-500/25">
-              <div className="py-6 space-y-2">
+              <div className="py-6 space-y-2 text-center">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
