@@ -6,12 +6,12 @@ export default function Home({ projects }) {
     <>
       <div
         className={
-          "container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-auto gap-8 md:p-8"
+          "container mx-auto grid grid-cols-1 p-8 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-auto gap-8 md:p-8"
         }
       >
         {projects.map((project) => (
           <Link key={project.id} href={`/${project.id}`}>
-            <div className="flex flex-col p-4 duration-300 ease-in-out rounded-md stretch hover:shadow-md">
+            <div className="flex flex-col p-4 duration-300 ease-in-out bg-white rounded-md stretch hover:shadow-md">
               <img
                 className="object-cover w-full h-48 bg-gray-900 bg-auto rounded-sm"
                 src={project.key_img}
