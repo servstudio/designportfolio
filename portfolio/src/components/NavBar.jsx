@@ -1,14 +1,13 @@
 import { useState } from "react"
 import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import Link from "next/link"
 
 const navigation = [
   { name: "Projects", href: "/" },
   { name: "About", href: "/about" },
 ]
 
-export default function Header() {
+export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
