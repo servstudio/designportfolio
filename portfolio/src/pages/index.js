@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Home({ projects }) {
   return (
     <>
-      <div className="py-8 text-white bg-gray-800">
+      <div className="px-4 py-8 text-white bg-gray-800">
         <div className="container mx-auto">
           <h1 className="text-4xl">I am an end-to-end Service Designer.</h1>
           <p>
@@ -15,7 +15,7 @@ export default function Home({ projects }) {
       </div>
       <div
         className={
-          "container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:p-8"
+          "container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:p-8 p-4"
         }
       >
         {projects.map((project) => (

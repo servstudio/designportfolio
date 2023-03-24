@@ -55,7 +55,7 @@ function About() {
                 experience.
               </h3>
             </div>
-            <div className="flex col-span-4 md:col-span-3">
+            <div className="flex col-span-4 md:col-span-2">
               <h3 className="p-4 text-white bg-gray-900 md:p-8">
                 Great ideas can come from anyone. Some of my best work has been
                 informed by people that would never describe themselves as
