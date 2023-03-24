@@ -17,16 +17,17 @@ export default function NavBar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-300">
             <span className="sr-only">Rich Ekelman's Logo</span>
-            <img
+            RICH EKELMAN
+            {/* <img
               className="w-auto h-8"
               src="./logomark.png"
               alt="Rich's Logo Mark"
-            />
+            /> */}
           </a>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
@@ -36,12 +37,12 @@ export default function NavBar() {
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden md:visible lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-white hover:text-orange-300"
             >
               {item.name}
             </a>
@@ -57,13 +58,9 @@ export default function NavBar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-gray-800 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Logo</span>
-              <img
-                className="w-auto h-8"
-                src="./logomark.png"
-                alt="Rich's Logo"
-              />
+            <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-300">
+              <span className="sr-only">Rich Ekelman's logo</span>
+              RE
             </a>
             <button
               type="button"
