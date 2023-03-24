@@ -20,20 +20,16 @@ export default function Home({ projects }) {
       >
         {projects.map((project) => (
           <Link key={project.id} href={`/${project.id}`}>
-            <div className="flex flex-col p-4 duration-300 ease-in-out bg-white rounded-md stretch hover:shadow-md">
+            <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md stretch hover:shadow-md">
               <img
-                className="object-cover w-full bg-auto rounded-sm min-h-3/5"
+                className="object-cover w-full bg-auto rounded-sm"
                 src={project.key_img}
                 alt={`${project.title} image`}
               ></img>
-              <div className="pt-2">
+              <div className="pt-auto">
                 <h2 className="text-xl font-medium text-gray-800 capitalize">
                   {project.title}
                 </h2>
-
-                {/* <p className="text-sm text-black line-clamp-2">
-                    {project.blurb}
-                  </p> */}
               </div>
             </div>
           </Link>
