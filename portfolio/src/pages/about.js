@@ -15,8 +15,8 @@ function About() {
           <div className="col-span-2">
             <h2 className="mb-4 text-4xl font-regular">Resume</h2>
             <p>
-              My path has been unique, but I feel like that has become a
-              strength having worked both internally and externally.
+              My path has been unique, but I feel that has become a strength
+              having worked both internally and externally.
             </p>
           </div>
         </div>

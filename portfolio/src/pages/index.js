@@ -5,7 +5,7 @@ export default function Home({ projects }) {
   return (
     <>
       <div className="px-4 py-8 text-white bg-gray-800">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-60ch">
           <h1 className="text-4xl">I am an end-to-end Service Designer.</h1>
           <p>
             My work weaves research, strategy, and design together solving
@@ -15,14 +15,14 @@ export default function Home({ projects }) {
       </div>
       <div
         className={
-          "container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:p-8 p-4"
+          "container max-w-60ch mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:pt-8 pt-4"
         }
       >
         {projects.map((project) => (
           <Link key={project.id} href={`/${project.id}`}>
             <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md stretch hover:shadow-md">
               <img
-                className="object-cover w-full bg-auto rounded-sm"
+                className="object-cover w-full mb-auto bg-auto rounded-sm"
                 src={project.key_img}
                 alt={`${project.title} image`}
               ></img>
@@ -32,7 +32,7 @@ export default function Home({ projects }) {
                 </h2>
               </div>
               <Link
-                className="text-yellow-500 hover:font-bold"
+                className="text-orange-300 hover:font-bold"
                 key={project.id}
                 href={`/${project.id}`}
               >
