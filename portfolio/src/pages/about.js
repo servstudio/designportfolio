@@ -22,7 +22,7 @@ function About() {
         </div>
       </section>
       <section className="bg-gray-600">
-        <div className="container grid w-full grid-cols-1 gap-4 px-4 py-8 mx-auto md:grid-cols-3">
+        <div className="container grid w-full grid-cols-1 gap-4 py-8 mx-auto md:grid-cols-3">
           <h2 className="text-4xl text-gray-100 md:col-span-3 font-regular">
             I believe
           </h2>
