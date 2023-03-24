@@ -15,20 +15,19 @@ function About() {
           <div className="col-span-2">
             <h2 className="mb-4 text-4xl font-regular">Resume</h2>
             <p>
-              My career looks like a jungle gym. I have gained experience in
-              multiple industries and settings, from healthcare to technology
-              and from large corporations to international conglomerates. This
-              has given me a unique perspective on human behavior and how design
-              can help address complex problems.
+              My path has been unique, but I feel like that has become a
+              strength having worked both internally and externally.
             </p>
           </div>
         </div>
       </section>
       <section className="bg-gray-600">
         <div className="container grid w-full grid-cols-1 gap-4 px-4 py-8 mx-auto md:grid-cols-3">
-          <h2 className="text-4xl md:col-span-3 font-regular">I believe</h2>
-          <div className="grid grid-cols-4 col-span-3 gap-4 text-xl md: grid-col-3 grid-rows-auto">
-            <div className="flex col-span-4 md:col-span-2">
+          <h2 className="text-4xl text-gray-100 md:col-span-3 font-regular">
+            I believe
+          </h2>
+          <div className="grid grid-cols-3 col-span-3 gap-4 text-xl grid-rows-auto">
+            <div className="flex col-span-4 md:col-span-1">
               <h3 className="p-4 text-white bg-gray-900 md:p-8">
                 <span className="text-orange-300">
                   Service design is a team sport.
@@ -55,11 +54,11 @@ function About() {
                 experience.
               </h3>
             </div>
-            <div className="flex col-span-4 md:col-span-2">
+            <div className="flex col-span-2 md:col-span-1">
               <h3 className="p-4 text-white bg-gray-900 md:p-8">
-                Great ideas can come from anyone. Some of my best work has been
-                informed by people that would never describe themselves as
-                designers, but they were experts on their experience.
+                Great ideas can come from anyone, even those without design
+                expertise; some of my best work has been informed by their
+                experience.
               </h3>
             </div>
           </div>
