@@ -55,7 +55,7 @@ const ProjectDetails = ({ project }) => (
         <div
           className="mt-12 bg-gray-200 bg-no-repeat w-content h-96"
           style={{
-            backgroundImage: `url(${project.process_img[0]})`,
+            backgroundImage: `url(${project.process_img(0)})`,
             backgroundSize: "contain",
             backgroundPosition: "center",
           }}
@@ -63,7 +63,7 @@ const ProjectDetails = ({ project }) => (
         <div
           className="mt-12 bg-gray-200 bg-no-repeat h-96"
           style={{
-            backgroundImage: `url(${project.process_img[1]})`,
+            backgroundImage: `url(${project.process_img(1)})`,
             backgroundSize: "contain",
             backgroundPosition: "center",
           }}
