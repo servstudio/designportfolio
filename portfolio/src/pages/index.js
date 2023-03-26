@@ -32,13 +32,13 @@ export default function Home({ projects }) {
                 </h2>
               </div>
               <div>
-                <Link
+                <p
                   className="text-orange-300 hover:font-bold"
                   key={project.id}
                   href={`/${project.id}`}
                 >
-                  <p>View Case Study</p>
-                </Link>
+                  View Case Study{" "}
+                </p>
               </div>
             </div>
           </Link>

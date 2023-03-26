@@ -12,9 +12,9 @@ const ProjectDetails = ({ project }) => (
         }}
       ></div>
 
-      <div className="container px-8 pt-12 mx-auto">
-        <h1 className="mb-2 text-4xl">{project.title}</h1>
-        <div className="space-x-2">
+      <div className="container px-8 pt-8 mx-auto space-y-8">
+        <h1 className="text-4xl">{project.title}</h1>
+        <div className="flex space-x-2 ">
           <p>{project.company}</p>
           <p className="mb-8">{project.year}</p>
         </div>
@@ -51,24 +51,27 @@ const ProjectDetails = ({ project }) => (
             </div>
           </div>
         </div>
-        <div
-          className="mt-12 bg-gray-200 bg-no-repeat w-content h-96"
-          style={{
-            backgroundImage: `url(${project.process_img(0)})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-          }}
-        ></div>
-        <div
-          className="mt-12 bg-gray-200 bg-no-repeat h-96"
-          style={{
-            backgroundImage: `url(${project.process_img(1)})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-          }}
-        ></div>
+        <div className="flex flex-col w-full md:flex-row">
+          <div
+            className="mt-12 bg-gray-200 bg-no-repeat w-content h-96"
+            style={{
+              backgroundImage: `url(${project.process_img[0]})`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+            }}
+          ></div>
 
-        <div className="w-4/5 py-16">
+          <div
+            className="mt-12 bg-gray-200 bg-no-repeat h-96"
+            style={{
+              backgroundImage: `url(${project.process_img[1]})`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+
+        <div className="w-full py-16 md:w-4/5">
           <h3 className="text-xl font-black">Key Learning</h3>
           <p>{project.keylearning}</p>
         </div>
