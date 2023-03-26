@@ -37,9 +37,7 @@ export default function Home({ projects }) {
                   key={project.id}
                   href={`/${project.id}`}
                 >
-                  <a>
-                    <p> View Case Study</p>
-                  </a>
+                  <p>View Case Study</p>
                 </Link>
               </div>
             </div>

@@ -7,7 +7,7 @@ const ProjectDetails = ({ project }) => (
         className="bg-white bg-no-repeat h-96"
         style={{
           backgroundImage: `url(${project.key_img})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       ></div>
