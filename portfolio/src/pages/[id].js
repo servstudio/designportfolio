@@ -19,8 +19,8 @@ const ProjectDetails = ({ project }) => (
           <p className="mb-8">{project.year}</p>
         </div>
 
-        <div className="flex flex-col md:flex-row md:justify-between">
-          <div className="flex flex-col md:w-1/2">
+        <div className="flex flex-col mb-8 md:flex-row md:justify-between">
+          <div className="flex flex-col w-4/5 md:w-1/2">
             <div>
               <h3 className="text-xl font-black">The Ask</h3>
               <p className="mb-8">{project.ask}</p>
