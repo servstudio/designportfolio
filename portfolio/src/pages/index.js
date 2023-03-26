@@ -31,13 +31,15 @@ export default function Home({ projects }) {
                   {project.title}
                 </h2>
               </div>
-              <Link
-                className="text-orange-300 hover:font-bold"
-                key={project.id}
-                href={`/${project.id}`}
-              >
-                <p> View Case Study</p>
-              </Link>
+              <div>
+                <Link
+                  className="text-orange-300 hover:font-bold"
+                  key={project.id}
+                  href={`/${project.id}`}
+                >
+                  <p> View Case Study</p>
+                </Link>
+              </div>
             </div>
           </Link>
         ))}

@@ -40,7 +40,6 @@ const ProjectDetails = ({ project }) => (
               </ul>
             </div>
           </div>
-
           <div className="w-1/4 space-y-8">
             <div>
               <h3 className="text-xl font-black ">Methods</h3>
