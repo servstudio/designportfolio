@@ -13,12 +13,15 @@ export default function Home({ projects }) {
           </p>
         </div>
       </div>
-      <div className="container h-12 py-12 mx-auto text-4xl max-w-7xl">
-        <h2>Public Work</h2>
+      <div className="container h-12 p-4 mx-auto my-8 max-w-7xl md:p-8">
+        <h2 className="text-4xl">Public Work</h2>
+        <p className="w-4/5 md:w-1/2">
+          Select case studies from publicly released work
+        </p>
       </div>
       <div
         className={
-          "container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:pt-8 pt-4"
+          "container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:p-8 p-4"
         }
       >
         {projects.map((project) => (

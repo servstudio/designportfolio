@@ -10,10 +10,10 @@ export default function About({ resume }) {
             <h2 className="mx-auto text-6xl font-regular">About</h2>
           </div>
         </header>
-        <div className="container p-4 mx-auto mb-12 md:max-w-7xl">
-          <div className="flex flex-col space-y-8 ">
+        <div className="container p-4 pb-12 mx-auto md:max-w-7xl">
+          <div className="flex flex-col space-y-8">
             <div>
-              <h2 className="mb-4 text-4xl font-regular">Resume</h2>
+              <h2 className="pb-4 text-4xl font-regular">Resume</h2>
               <p className="w-4/5 md:w-1/2">
                 My path has been unique, but I feel that has become a strength
                 having worked both internally and externally.
