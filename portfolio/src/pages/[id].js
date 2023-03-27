@@ -12,7 +12,7 @@ const ProjectDetails = ({ project }) => (
         }}
       ></div>
 
-      <div className="container px-8 pt-8 mx-auto space-y-8 max-w-7xl">
+      <div className="container px-8 py-8 mx-auto space-y-8 max-w-7xl">
         <h1 className="text-4xl">{project.title}</h1>
         <div className="flex space-x-2 ">
           <p>{project.company}</p>
@@ -78,7 +78,7 @@ const ProjectDetails = ({ project }) => (
           </>
         )}
 
-        <div className="w-full py-16 max-w-7xl md:w-4/5">
+        <div className="w-full py-12 max-w-7xl md:w-4/5">
           <h3 className="text-xl font-black">Key Learning</h3>
           <p>{project.keylearning}</p>
         </div>
