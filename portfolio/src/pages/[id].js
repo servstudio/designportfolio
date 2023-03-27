@@ -78,7 +78,7 @@ const ProjectDetails = ({ project }) => (
           </>
         )}
 
-        <div className="w-full py-12 max-w-7xl md:w-4/5">
+        <div className="w-full max-w-7xl md:w-4/5">
           <h3 className="text-xl font-black">Key Learning</h3>
           <p>{project.keylearning}</p>
         </div>
