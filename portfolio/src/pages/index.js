@@ -5,10 +5,10 @@ export default function Home({ projects }) {
   return (
     <>
       <div className="px-4 py-8 text-white bg-gray-800">
-        <div className="container mx-auto max-w-7xl max-w-60ch">
+        <div className="container p-4 mx-auto max-w-7xl md:p-8">
           <h1 className="text-4xl">I am an end-to-end Service Designer.</h1>
           <p>
-            My work weaves research, strategy, and design together solving
+            My work weaves research, strategy, and design together to solve
             complex problems.
           </p>
         </div>
