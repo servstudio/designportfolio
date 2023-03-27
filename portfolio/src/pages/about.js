@@ -4,32 +4,30 @@ import { supabase } from "@/utils/supabase"
 export default function About({ resume }) {
   return (
     <>
-      <div className="space-y-8 ">
-        <header className="px-4 py-12 text-white bg-gray-800 ">
-          <div className="container mx-auto">
-            <div className="col-span-2">
-              <h2 className="mb-4 text-6xl font-regular">About</h2>
-            </div>
+      <div className="space-y-12 ">
+        <header className="text-white bg-gray-800 max-w-60 ">
+          <div className="container p-4 py-12 pl-4 mx-auto mb-12 md:max-w-7xl md:pl-8 max-w-7xl">
+            <h2 className="mx-auto text-6xl font-regular">About</h2>
           </div>
         </header>
-        <div className="container p-8 mx-auto mb-12 md:max-w-60ch">
+        <div className="container p-4 mx-auto mb-12 md:max-w-7xl">
           <div className="flex flex-col space-y-8 ">
             <div>
               <h2 className="mb-4 text-4xl font-regular">Resume</h2>
-              <p>
+              <p className="w-4/5 md:w-1/2">
                 My path has been unique, but I feel that has become a strength
                 having worked both internally and externally.
               </p>
             </div>
 
             {/* Experience section */}
-            <div className="flex flex-col justify-between md:flex-row md:space-y-8">
-              <div className="pb-12 space-y-4 md:w-8/12">
-                <h3 className="text-2xl">Experience</h3>
+            <div className="flex flex-col md:flex-row md:space-y-8 md:flex-shrink">
+              <div className="pb-12 space-y-4 md:w-6/12 md:mr-12">
+                <h3 className="text-xl font-black">Experience</h3>
 
                 {resume.map((role) => (
-                  <div key={role.id[0]} className="mb-8">
-                    <div className="flex flex-col space-y-4 md:flex-row md:space-y-0">
+                  <div key={role.id[0]} className="pb-4">
+                    <div className="flex flex-col md:flex-row md:space-y-0">
                       <h4 className="mr-2 font-bold">{role.company}</h4>
                       <h4 className="">{role.title}</h4>
                     </div>
@@ -43,7 +41,7 @@ export default function About({ resume }) {
 
               {/* Education section */}
               <div className="flex flex-col space-y-8">
-                <h3 className="text-2xl">Eductation</h3>
+                <h3 className="text-xl font-black">Eductation</h3>
                 <div>
                   <h4 className="mr-2 font-bold">MFA Service Design</h4>
                   <h4 className="">Savannah College of Art & Design</h4>
@@ -59,10 +57,10 @@ export default function About({ resume }) {
       </div>
 
       {/* Belief section */}
-      <div className="p-8 px-4 bg-gray-600">
-        <div className="container grid w-full grid-cols-1 gap-4 py-8 mx-auto md:grid-cols-3">
+      <div className="p-4 bg-gray-600 md:py-12 ">
+        <div className="grid grid-cols-1 gap-4 py-8 mx-auto max-w-7xl md:grid-cols-3">
           <h2 className="text-4xl text-gray-100 md:col-span-3 font-regular">
-            I believe
+            I believe...
           </h2>
           <div className="grid grid-cols-4 col-span-3 gap-4 text-xl md:grid-col-3 grid-rows-auto">
             <div className="flex col-span-4 md:col-span-1">
@@ -80,23 +78,17 @@ export default function About({ resume }) {
                 follow.
               </h3>
             </div>
-            <div className="flex col-span-2 md:col-span-1">
-              <h3 className="p-4 text-white bg-gray-900 md:p-8">
-                The ones that make it complicated never get congratulated.
-              </h3>
-            </div>
-            <div className="flex col-span-4 md:col-span-2">
-              <h3 className="p-4 text-gray-800 bg-orange-300 md:p-8">
-                When you set out to improve the experience you generally save
-                money, but when you set out to save money you generally ruin the
-                experience.
-              </h3>
-            </div>
             <div className="flex col-span-4 md:col-span-1">
-              <h3 className="p-4 text-white bg-gray-900 md:p-8">
-                Great ideas can come from anyone, even those without design
-                expertise; some of my best work has been informed by their
-                experience.
+              <h3 className="p-4 text-gray-800 bg-orange-300 md:p-8">
+                Set out to improve the experience you will generally save money,
+                but set out to save money you generally ruin the experience.
+              </h3>
+            </div>
+
+            <div className="flex col-span-4 md:col-span-1">
+              <h3 className="p-4 text-white bg-gray-800 md:p-8">
+                Great ideas can come from anyone. True collaboration is when
+                everyone is working towards the best idea, not their idea.
               </h3>
             </div>
           </div>

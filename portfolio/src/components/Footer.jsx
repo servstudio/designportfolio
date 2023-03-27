@@ -30,16 +30,16 @@ const navigation = {
 function Footer() {
   return (
     <div className="p-4 bg-gray-800">
-      <div className="container flex justify-between mx-auto align-baseline">
-        <p className="text-xs leading-8 text-gray-100">
+      <div className="flex mx-auto align-center max-w-7xl">
+        <p className="mr-4 text-xs leading-8 text-gray-100">
           &copy; 2023 Rich Ekelman, Inc. All rights reserved.
         </p>
-        <div className="flex space-x-6">
+        <div className="flex space-x-4">
           {navigation.social.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-100 hover:text-gray-400"
+              className="text-gray-100 hover:text-orange-300"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="w-6 h-6" aria-hidden="true" />

@@ -28,6 +28,6 @@ a {
 
 @media (prefers-color-scheme: lite) {
   html {
-    color-scheme: lite;
+    color-scheme: light;
   }
 }
