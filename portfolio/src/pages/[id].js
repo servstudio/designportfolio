@@ -51,16 +51,32 @@ const ProjectDetails = ({ project }) => (
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col md:flex-row">
-          <div
-            className="mt-12 bg-gray-200 bg-no-repeat h-96"
-            style={{
-              backgroundImage: `url(${project.process_img[0]})`,
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        </div> */}
+
+        {/* Project images */}
+
+        {project.process_img === null ? (
+          ""
+        ) : (
+          <>
+            <div
+              className="mt-12 bg-gray-200 bg-no-repeat h-96"
+              style={{
+                backgroundImage: `url(${project.process_img[0]})`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+              }}
+            ></div>
+
+            <div
+              className="mt-12 bg-gray-200 bg-no-repeat h-96"
+              style={{
+                backgroundImage: `url(${project.process_img[1]})`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          </>
+        )}
 
         <div className="w-full py-16 max-w-7xl md:w-4/5">
           <h3 className="text-xl font-black">Key Learning</h3>
