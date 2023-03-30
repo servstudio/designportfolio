@@ -14,12 +14,12 @@ const ProjectDetails = ({ project }) => (
 
       <div className="container px-8 py-8 mx-auto space-y-8 max-w-7xl">
         <h1 className="text-4xl">{project.title}</h1>
-        <div className="flex space-x-2 ">
+        <div className="flex space-x-1 ">
           <p>{project.company}</p>
           <p className="mb-8">{project.year}</p>
         </div>
 
-        <div className="flex flex-col mb-8 md:flex-row md:justify-between">
+        <div className="flex flex-col space-y-8 lg:mb-8 md:flex-row md:justify-between">
           <div className="flex flex-col w-4/5 md:w-1/2">
             <div>
               <h3 className="text-xl font-black">The Ask</h3>
@@ -40,7 +40,7 @@ const ProjectDetails = ({ project }) => (
               </ul>
             </div>
           </div>
-          <div className="w-1/4 space-y-8">
+          <div className="space-y-8  md:w-1/4">
             <div>
               <h3 className="text-xl font-black ">Methods</h3>
               <p>{project.methods}</p>

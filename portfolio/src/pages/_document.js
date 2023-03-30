@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Portfolio</title>
+        <title>Service Design Portfolio</title>
         <meta
           name="description"
           content="Professional service design portfolio"
