@@ -4,10 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Service Design Portfolio</title>
+        <title>Rich's Portfolio</title>
         <meta
           name="description"
-          content="Professional service design portfolio"
+          content="Rich Ekelman's professional service design portfolio."
         />
         <meta
           charSet="utf-8"
