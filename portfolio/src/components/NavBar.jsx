@@ -60,7 +60,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-300">
               <span className="sr-only">Rich Ekelman's logo</span>
-              RE
+              Rich Ekelman
               {/* <img
                 className="w-auto h-16"
                 src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/icon-dark.png?t=2023-03-26T18%3A50%3A59.626Z"
