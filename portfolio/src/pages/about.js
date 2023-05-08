@@ -14,10 +14,6 @@ export default function About({ resume }) {
           <div className="flex flex-col space-y-8">
             <div>
               <h2 className="pb-4 text-4xl font-regular">Resume</h2>
-              <p className="w-4/5 md:w-1/2">
-                My path has been unique, but I feel that has become a strength
-                having worked both internally and externally.
-              </p>
             </div>
 
             {/* Experience section */}
