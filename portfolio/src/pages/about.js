@@ -23,7 +23,7 @@ export default function About({ resume }) {
 
                 {resume.map((role) => (
                   <div key={role.id[0]} className="pb-4">
-                    <div className="flex md:flex-row md:space-y-0">
+                    <div className="flex flex-col md:flex-row md:space-y-0">
                       <h4 className="mr-2 font-bold">{role.company}</h4>
                       <h4 className="">{role.title}</h4>
                     </div>
