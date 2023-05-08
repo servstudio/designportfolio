@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Page>
         <Component {...pageProps} />
-        <Analytics id="Z2Y6XZ5ZQZ" />
+        <Analytics />
       </Page>
     </>
   )
