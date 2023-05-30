@@ -82,7 +82,7 @@ export default function Example() {
         id: 1,
         header: "Design Documentation",
         content:
-          "Many projects have not involved creating interfaces, but if they do documentation is essential. I have found that creating documentation that is easy to understand and follow is the best way to ensure a service is implemented as intended.",
+          "Many projects do not involved an interface, but if they do documentation is essential. I have found that creating documentation that is easy to understand and follow is the best way to ensure a service is implemented as intended.",
       },
       {
         id: 2,
