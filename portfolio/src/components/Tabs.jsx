@@ -120,7 +120,7 @@ export default function Example() {
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-md py-2.5 text-md leading-5 text-gray-800 hover:bg-gray-900 hover:text-gray-50 hover:font-normal",
+                  "w-full rounded-md py-2.5 text-md leading-5 text-gray-100 hover:bg-gray-900 hover:text-gray-50 hover:font-normal",
                   //   "ring-orange-400 ring-opacity-60 ring-offset-1 ring-offset-orange-400 focus:outline-none focus:ring-2",
                   selected
                     ? "shadow text-gray-600 bg-orange-300 font-bold"
