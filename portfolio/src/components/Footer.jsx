@@ -30,8 +30,8 @@ const navigation = {
 function Footer() {
   return (
     <div className="p-4 bg-gray-800">
-      <div className="flex mx-auto align-center max-w-7xl">
-        <p className="mr-4 text-xs leading-8 text-gray-100">
+      <div className="flex py-2 mx-auto align-center max-w-7xl">
+        <p className="mr-4 text-sm leading-8 text-gray-100">
           &copy; 2023 Rich Ekelman, Inc. All rights reserved. This site has been
           designed and developed by Rich Ekelman using Next.js and Tailwind CSS.
         </p>

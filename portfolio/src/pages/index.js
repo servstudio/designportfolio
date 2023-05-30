@@ -1,5 +1,7 @@
 import { supabase } from "@/utils/supabase"
+import { Tab } from "@headlessui/react"
 import Link from "next/link"
+import Tabs from "@/components/Tabs"
 
 export default function Home({ projects }) {
   return (
@@ -13,15 +15,15 @@ export default function Home({ projects }) {
           </p>
         </div>
       </div>
-      <div className="container h-12 p-4 mx-auto my-8 max-w-7xl md:p-8">
+      <div className="container h-12 p-8 mx-auto my-8 max-w-7xl md:p-8">
         <h2 className="text-4xl">Public Work</h2>
         <p className="w-4/5 md:w-1/2">
-          Select case studies from publicly released work
+          Select case studies from publicly released work.
         </p>
       </div>
       <div
         className={
-          "container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-8 md:p-8 p-4"
+          "container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-8 p-8 md:p-8"
         }
       >
         {projects.map((project) => (
@@ -49,6 +51,22 @@ export default function Home({ projects }) {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* End to End Service Section */}
+      <div className="container p-8 mx-auto space-y-8 text-gray-200 bg-gray-700 rounded-md max-w-7xl md:pb-16">
+        <h2 className="text-4xl">End to End Service Design</h2>
+        <p className="w-4/5 md:w-1/2">
+          Service design is a way of improving how services are created and
+          provided. Working with cross-disciplinary teams, I think about how the
+          service operates from the outside in, ensuring everything runs
+          smoothly behind the scenes to deliver a smooth experience for the
+          range of people an organization wants to serve. Every project is
+          different, but most of my work spans these phases of design.
+        </p>
+        <div className="w-full">
+          <Tabs />
+        </div>
       </div>
     </>
   )
