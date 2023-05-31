@@ -17,7 +17,7 @@ export default function NavBar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-600">
+          <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-300">
             <span className="sr-only">Rich Ekelman's Logo</span>
             Rich Ekelman
             {/* <img
@@ -58,7 +58,7 @@ export default function NavBar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-gray-800 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-600">
+            <a href="/" className="-m-1.5 p-1.5 font-bold text-orange-300">
               <span className="sr-only">Rich Ekelman's logo</span>
               Rich Ekelman
               {/* <img
