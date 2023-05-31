@@ -57,12 +57,10 @@ export default function Home({ projects }) {
       <div className="container p-8 mx-auto space-y-8 text-gray-200 bg-gray-700 rounded-md max-w-7xl md:pb-16">
         <h2 className="text-4xl">End to End Service Design</h2>
         <p className="w-4/5 md:w-1/2">
-          Service design is a way of improving how services are created and
-          provided. Working with cross-disciplinary teams, I think about how the
-          service operates from the outside in, ensuring everything runs
-          smoothly behind the scenes to deliver a smooth experience for the
-          range of people an organization wants to serve. Every project is
-          different, but most of my work spans these phases of design.
+          I believe my superpower is the flexible range of ways I can contribute
+          from the earliest ideas to implementation. Every project is different,
+          but my work spans these phases of design contributing in multiple ways
+          from idea to implementation.
         </p>
         <div className="w-full">
           <Tabs />
