@@ -1,5 +1,5 @@
 import { supabase } from "@/utils/supabase"
-import { Tab } from "@headlessui/react"
+// import { Tab } from "@headlessui/react"
 import Link from "next/link"
 import Tabs from "@/components/Tabs"
 
@@ -41,7 +41,7 @@ export default function Home({ projects }) {
               </div>
               <div>
                 <p
-                  className="text-orange-300 hover:font-bold"
+                  className="text-orange-600 cursor-pointer hover:font-bold hover:underline"
                   key={project.id}
                   href={`/${project.id}`}
                 >
@@ -55,7 +55,7 @@ export default function Home({ projects }) {
 
       {/* End to End Service Section */}
       <div className="container p-8 mx-auto space-y-8 text-gray-200 bg-gray-700 rounded-md max-w-7xl md:pb-16">
-        <h2 className="text-4xl">End to End Service Design</h2>
+        <h2 className="text-4xl">End to End Capabilities</h2>
         <p className="w-4/5 md:w-1/2">
           I believe my superpower is the flexible range of ways I can contribute
           from the earliest ideas to implementation. Every project is different,

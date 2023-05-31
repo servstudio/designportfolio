@@ -18,19 +18,19 @@ export default function Example() {
         id: 2,
         header: "Workshop Fascilitation",
         content:
-          "The most common way I have brought together cross-disciplinary teams to solve problems have been through leading them through a workshop employing bespoke activities designed to encourage participation and latteral thinking.",
+          "Workshops are a great way to realize alignment by encourages cross-functional teams to participate and think differently.",
       },
       {
         id: 3,
         header: "Storyboarding",
         content:
-          "In my career the fastest way to understand a problem and communicate a solution has been through storytelling. This capability has allowed me to reflect the story a given concept will tell.",
+          "Storytelling has been the quickest way for me to understand problems and share solutions. It helps me envision the story that a concept will convey.",
       },
       {
         id: 4,
         header: "Service Blueprinting",
         content:
-          "I use service blueprints to understand the current state of a service and to identify opportunities for improvement. I have also used them to communicate service gaps to stakeholders.",
+          "I use service blueprints to understand how a service currently works and find ways to make it better while visualizing opportunities for improvement.",
       },
       {
         id: 5,
@@ -92,21 +92,21 @@ export default function Example() {
       },
       {
         id: 3,
-        header: "Establish a Design System",
-        content:
-          "An ability to create a design system is how I have been able ensure a service is consistent and scalable.",
-      },
-      {
-        id: 4,
         header: "Key Performance Metrics",
         content:
           "Shaping how a team considers success is a critical part of ensuring a service is meeting the needs of the people it serves. Understanding service performance has helped us identify opportunities for improvement and innovation as the service evolves.",
       },
       {
+        id: 4,
+        header: "Write Front-End Styles",
+        content:
+          "An ability to contribute code when needed is how I have been able to support scalable implementation.",
+      },
+      {
         id: 5,
         header: "Dev Support",
         content:
-          "I believe that working with developers to ensure the vision of a given concept is realized is a key part of Service Design.",
+          "Working with developers by writing User Stories, creating and managing a backlog, or participating in agile rituals are ways I have worked to ensure the vision we created is realized as intended.",
       },
     ],
   })
@@ -114,17 +114,17 @@ export default function Example() {
   return (
     <div className="w-full px-2 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex w-full p-1 mx-auto space-x-1 bg-gray-100 rounded-md">
+        <Tab.List className="flex w-full p-1 mx-auto space-x-1">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-md py-2.5 text-md leading-5 text-gray-100 hover:bg-gray-900 hover:text-gray-50 hover:font-normal",
-                  //   "ring-orange-400 ring-opacity-60 ring-offset-1 ring-offset-orange-400 focus:outline-none focus:ring-2",
+                  "w-full py-2.5 text-md leading-5 text-gray-100 hover:bg-gray-900 hover:text-gray-50 hover:font-normal",
+                  "ring-orange-300 ring-opacity-30 ring-offset-1 ring-offset-orange-300 focus:outline-none focus:ring-2",
                   selected
-                    ? "shadow text-gray-600 bg-orange-300 font-bold"
-                    : "text-gray-100 hover:bg-orange-300] hover:text-gray-800"
+                    ? "shadow text-orange-300 font-bold border-b-2 border-orange-300"
+                    : "text-gray-100 hover:bg-orange-600] hover:text-gray-200"
                 )
               }
             >
@@ -141,14 +141,12 @@ export default function Example() {
                 // "ring-offset-2 ring-offset-orange-600 focus:outline-none focus:ring-2"
               )}
             >
-              <h3 className="text-center">Ways of Working</h3>
-
               <ul className="grid grid-gap-4 grid-col-1 md:grid-flow-row md:grid-cols-3 md:grid-gap-8">
                 {phases.map((phase) => (
                   <li key={phase.id} className="relative p-3">
                     <h3 className="font-bold leading-5">{phase.header}</h3>
                     <p className="mt-2 text-sm text-gray-800">
-                      <li>{phase.content}</li>
+                      {phase.content}
                     </p>
                   </li>
                 ))}
