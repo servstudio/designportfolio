@@ -42,7 +42,7 @@ export default function Home({ projects }) {
       </div>
       <div
         className={
-          "container max-w-7xl mx-auto grid grid-cols-1 grid-row-2 md:grid-cols-2 md: lg:grid-cols-2 gap-8 p-8 md:pb-32 lg:overflow-hidden"
+          "container max-w-7xl mx-auto grid grid-cols-1 grid-row-2 md:grid-cols-2 lg:grid-cols-2 gap-8 p-8 md:p-0 md:pb-32 lg:overflow-hidden"
         }
       >
         {projects.map((project) =>
@@ -114,7 +114,7 @@ export default function Home({ projects }) {
 
             {/* Image Grid Gallery */}
 
-            <div class="grid grid-cols-7 grid-row-3 gap-4">
+            <div class="grid grid-cols-6 grid-row-3 gap-4">
               <div className="col-span-3 h-84">
                 <img
                   className="object-cover w-full h-full"
