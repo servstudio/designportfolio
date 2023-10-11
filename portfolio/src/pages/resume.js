@@ -6,8 +6,8 @@ export default function Resume({ resume }) {
     <>
       <div className="space-y-12 ">
         <header className="text-gray-800 bg-white max-w-60 ">
-          <div className="container py-8 pl-8 mx-auto mb-12 md:max-w-7xl">
-            <h2 className="mx-auto text-6xl  font-regular">Resume</h2>
+          <div className="container py-8 mx-auto mb-12 md:max-w-7xl">
+            <h2 className="mx-auto text-6xl font-regular">Resume</h2>
           </div>
         </header>
         <div className="container pb-12 mx-auto md:max-w-7xl">
