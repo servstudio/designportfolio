@@ -57,7 +57,7 @@ export default function NavBar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-3/4 px-6 py-6 overflow-y-auto bg-gray-800 sm:max-w-sm sm:ring-1 sm:ring-white">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-3/4 px-8 py-6 overflow-y-auto bg-gray-800 sm:max-w-sm sm:ring-1 sm:ring-white">
           <div className="flex items-right">
             {/* <a href="/" className="-m-1.5 p-1.5 font-bold text-gray-800">
               <span className="sr-only">Rich Ekelman's logo</span>
