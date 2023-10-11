@@ -10,8 +10,8 @@ export default function Resume({ resume }) {
             <h2 className="mx-auto text-6xl font-regular">Resume</h2>
           </div>
         </header>
-        <div className="container p-8 pb-12 mx-auto md:max-w-7xl">
-          <div className="flex flex-col space-y-8">
+        <div className="container pb-12 mx-auto md:max-w-7xl">
+          <div className="flex flex-col p-8 space-y-8">
             {/* Experience section */}
             <div className="flex flex-col md:flex-row md:space-y-8 md:flex-shrink">
               <div className="pb-12 space-y-4 md:w-6/12 md:mr-12">
