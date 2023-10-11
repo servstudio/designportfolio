@@ -4,7 +4,7 @@ import { supabase } from "@/utils/supabase"
 export default function Resume({ resume }) {
   return (
     <>
-      <div className="space-y-12 ">
+      <div className="mx-8 space-y-12 ">
         <header className="text-gray-800 bg-white max-w-60 ">
           <div className="container p-8 py-12 mx-auto mb-12 md:max-w-7xl md:pl-8 max-w-7xl">
             <h2 className="mx-auto text-6xl font-regular">Resume</h2>
@@ -32,13 +32,13 @@ export default function Resume({ resume }) {
               </div>
 
               {/* Education section */}
-              <div className="flex flex-col space-y-8">
+              <div className="flex flex-col">
                 <h3 className="text-xl font-black">Eductation</h3>
-                <div>
+                <div className="mb-8">
                   <h4 className="mr-2 font-bold">MFA Service Design</h4>
                   <h4 className="">Savannah College of Art & Design</h4>
                 </div>
-                <div>
+                <div className="mb-8">
                   <h4 className="mr-2 font-bold">BA Psychology</h4>
                   <h4 className="">Montclair State University</h4>
                 </div>
