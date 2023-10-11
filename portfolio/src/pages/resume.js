@@ -4,13 +4,13 @@ import { supabase } from "@/utils/supabase"
 export default function Resume({ resume }) {
   return (
     <>
-      <div className="mx-8 space-y-12 ">
+      <div className="space-y-12 ">
         <header className="text-gray-800 bg-white max-w-60 ">
           <div className="container p-8 py-12 mx-auto mb-12 md:max-w-7xl md:pl-8 max-w-7xl">
             <h2 className="mx-auto text-6xl font-regular">Resume</h2>
           </div>
         </header>
-        <div className="container pt-8 pb-12 mx-auto md:max-w-7xl">
+        <div className="container p-8 pb-12 mx-auto md:max-w-7xl">
           <div className="flex flex-col space-y-8">
             {/* Experience section */}
             <div className="flex flex-col md:flex-row md:space-y-8 md:flex-shrink">
