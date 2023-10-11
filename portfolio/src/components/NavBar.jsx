@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
 const navigation = [
   { name: "Home", href: "/" },
+  { name: "About", href: "/#about-me" },
   { name: "Projects", href: "/projects" },
   { name: "Resume", href: "/resume" },
 ]
@@ -42,7 +43,7 @@ export default function NavBar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-800 hover:text-gray-800"
+              className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-gray-800"
             >
               {item.name}
             </a>

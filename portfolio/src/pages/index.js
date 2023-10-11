@@ -27,21 +27,28 @@ export default function Home({ projects }) {
       </div>
 
       {/* =======Featured======= */}
-      <div className="container h-12 p-8 mx-auto my-8 max-w-7xl">
-        <h2 className="text-4xl">Featured</h2>
-        <p className="w-4/5 md:w-1/2">
-          Select case studies from publicly released work.
+      <div className="container h-12 p-8 mx-auto mb-4 text-center md:mb-8 max-w-7xl">
+        <h2 className="text-4xl">Featured Projects</h2>
+        <p>
+          View more{" "}
+          <Link
+            className="text-orange-600 cursor-pointer hover:font-bold hover:underline"
+            href="/projects"
+          >
+            projects
+          </Link>
+          .
         </p>
       </div>
       <div
         className={
-          "container max-w-7xl mx-auto grid grid-cols-1 grid-row-2 md:grid-cols-2 md: lg:grid-cols-2 gap-8 p-8 md:p-8 lg:overflow-hidden"
+          "container max-w-7xl mx-auto grid grid-cols-1 grid-row-2 md:grid-cols-2 md: lg:grid-cols-2 gap-8 p-8 md:pb-32 lg:overflow-hidden"
         }
       >
         {projects.map((project) =>
           project.featured ? (
             <Link key={project.id} href={`/${project.id}`}>
-              <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md hover:shadow-md">
+              <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md group hover:shadow-xl hover:-translate-y-4">
                 <img
                   className="object-cover w-full my-auto rounded-sm"
                   src={project.key_img}
@@ -71,16 +78,15 @@ export default function Home({ projects }) {
 
       {/* =======About Me======= */}
       <section
-        id="About"
-        className="flex px-8 py-16 text-white bg-gray-800 justify-content-center"
+        id="about-me"
+        className="flex px-8 py-32 text-white bg-gray-800 justify-content-center"
       >
         <div className="h-auto mx-auto max-w-7xl">
-          <h2 className="mb-8 text-4xl md:hidden">About Me</h2>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="flex flex-col justify-center w-3/4 mb-8 space-y-8 md:mb-0">
               <h2 className="mb-8 text-4xl">About Me</h2>
               <div className="">
-                <h3 className="text-2xl font-bold">At Work</h3>
+                <h3 className="text-xl font-black">At Work</h3>
                 <p>
                   I like to help make complex decisions feel easier to
                   understand. Ilike to to see the system by zooming in and out
@@ -88,7 +94,7 @@ export default function Home({ projects }) {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">At Home</h3>
+                <h3 className="text-xl font-black">At Home</h3>
                 <p>
                   Making pizza and bread from scratch is how I get away from the
                   screen. Our neighbors think my neopolitan pizza is the best in
@@ -97,7 +103,7 @@ export default function Home({ projects }) {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">At Play</h3>
+                <h3 className="text-xl font-black">At Play</h3>
                 <p>
                   Our 7 year old rescue dog Duffy keeps me active. We like to
                   throw the frisbee and take weekend hikes in one of our 6 local
@@ -113,24 +119,28 @@ export default function Home({ projects }) {
                 <img
                   className="object-cover w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/ACNM-miro.png"
+                  alt="An Actor Network Map created in Miro"
                 />
               </div>
               <div className="col-span-3">
                 <img
                   className="object-cover w-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
+                  alt="A man making french baggettes in his kitchen."
                 />
               </div>
               <div className="col-span-3">
                 <img
                   className="object-cover w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/X%20Lab%20Process%201"
+                  alt="Image of a design workshop with a man standing next to a whiteboard."
                 />
               </div>
               <div className="col-span-3">
                 <img
                   className="object-cover"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_1754.JPG"
+                  alt="A woman kneeling down to take a picture next to her dog."
                 />
               </div>
               {/* <div className="col-span-1">

@@ -6,8 +6,10 @@ export default function Projects({ projects }) {
   return (
     <>
       <header className="text-gray-800 bg-white max-w-60 h- ">
-        <div className="container p-4 py-12 pl-4 mx-auto mb-12 md:max-w-7xl md:pl-8 max-w-7xl">
-          <h2 className="mx-auto text-6xl font-regular">Projects</h2>
+        <div className="container px-4 py-12 mx-auto mb-12 md:max-w-7xl md:pl-8 max-w-7xl">
+          <h2 className="px-4 mx-auto text-6xl md:px-4 font-regular">
+            Projects
+          </h2>
         </div>
       </header>
       <div
@@ -17,7 +19,7 @@ export default function Projects({ projects }) {
       >
         {projects.map((project) => (
           <Link key={project.id} href={`/${project.id}`}>
-            <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md hover:shadow-md">
+            <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md group hover:shadow-xl hover:-translate-y-4">
               <img
                 className="object-cover w-full my-auto rounded-sm"
                 src={project.key_img}
