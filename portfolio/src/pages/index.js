@@ -27,7 +27,7 @@ export default function Home({ projects }) {
       </div>
 
       {/* =======Featured======= */}
-      <div className="container h-12 p-8 mx-auto mb-4 text-center md:mb-8 max-w-7xl">
+      <div className="container p-8 mx-auto mb-4 text-center md:mb-8 max-w-7xl">
         <h2 className="text-4xl">Featured Projects</h2>
         <p>
           View more{" "}
