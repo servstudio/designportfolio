@@ -89,8 +89,9 @@ export default function Home({ projects }) {
                 <h3 className="text-xl font-black">At Work</h3>
                 <p>
                   I like to help make complex decisions feel easier to
-                  understand. Ilike to to see the system by zooming in and out
-                  as needed.
+                  understand. Its hard to design for a system we can not see.
+                  Working with cross-disciplinary teams has helped me zoon in
+                  and out.
                 </p>
               </div>
               <div>
