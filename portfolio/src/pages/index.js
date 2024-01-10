@@ -10,18 +10,18 @@ export default function Home({ projects }) {
       {/* =======Hero======= */}
       <div className="h-auto px-4 text-gray-800 bg-white">
         <div className="container items-center mx-auto max-w-7xl">
-          <div className="flex items-center justify-center align-middle">
+          <div className="flex items-center p-16 align-middle justify-left">
             <div className="flex-col px-4">
               <h1 className="text-4xl font-bold md:text-6xl">Rich Ekelman</h1>
               <p>Research, strategy, and design.</p>
             </div>
 
-            <div className="w-3/4 h-auto md:w-1/2">
+            {/* <div className="w-3/4 h-auto md:visible md:w-1/2">
               <img
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full "
                 src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/hero-sketch.JPG"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -79,11 +79,50 @@ export default function Home({ projects }) {
       {/* =======About Me======= */}
       <section
         id="about-me"
-        className="flex px-8 py-32 text-white bg-gray-800 justify-content-center"
+        className="flex px-8 py-32 text-white bg-gray-700 justify-content-center"
       >
         <div className="h-auto mx-auto max-w-7xl">
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="flex flex-col justify-center w-3/4 mb-8 space-y-8 md:mb-0">
+            <div class="grid grid-cols-4 grid-row-3 gap-4">
+              {/* Image Grid Gallery */}
+
+              <div className="col-span-4 md:col-span-2">
+                <img
+                  className="object-cover w-full h-full"
+                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/ACNM-miro.png"
+                  alt="An Actor Network Map created in Miro"
+                />
+              </div>
+              <div className="col-span-2">
+                <img
+                  className="object-cover w-full"
+                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
+                  alt="A man making french baggettes in his kitchen."
+                />
+              </div>
+              <div className="col-span-2">
+                <img
+                  className="object-cover w-full h-full"
+                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/X%20Lab%20Process%201"
+                  alt="Image of a design workshop with a man standing next to a whiteboard."
+                />
+              </div>
+              <div className="col-span-4 md:col-span-2">
+                <img
+                  className="object-cover"
+                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_1754.JPG"
+                  alt="A woman kneeling down to take a picture next to her dog."
+                />
+              </div>
+              {/* <div className="col-span-1">
+                <img
+                  className="object-fill w-full h-full"
+                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
+                />
+              </div> */}
+            </div>
+
+            <div className="flex flex-col justify-center w-3/4 mb-8 space-y-8 md:px-8 md:mb-0">
               <h2 className="mb-8 text-4xl">About Me</h2>
               <div className="">
                 <h3 className="text-xl font-black">At Work</h3>
@@ -106,50 +145,10 @@ export default function Home({ projects }) {
               <div>
                 <h3 className="text-xl font-black">At Play</h3>
                 <p>
-                  Our 7 year old rescue dog Duffy keeps me active. We like to
-                  throw the frisbee and take weekend hikes in one of our 6 local
-                  parks here in Wilmington, DE.
+                  Our rescue dog Duffy keeps me active. We like to throw the
+                  frisbee and take weekend hikes in one of our local parks.
                 </p>
               </div>
-            </div>
-
-            {/* Image Grid Gallery */}
-
-            <div class="grid grid-cols-6 grid-row-3 gap-4">
-              <div className="col-span-3 h-84">
-                <img
-                  className="object-cover w-full h-full"
-                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/ACNM-miro.png"
-                  alt="An Actor Network Map created in Miro"
-                />
-              </div>
-              <div className="col-span-3">
-                <img
-                  className="object-cover w-full"
-                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
-                  alt="A man making french baggettes in his kitchen."
-                />
-              </div>
-              <div className="col-span-3">
-                <img
-                  className="object-cover w-full h-full"
-                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/X%20Lab%20Process%201"
-                  alt="Image of a design workshop with a man standing next to a whiteboard."
-                />
-              </div>
-              <div className="col-span-3">
-                <img
-                  className="object-cover"
-                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_1754.JPG"
-                  alt="A woman kneeling down to take a picture next to her dog."
-                />
-              </div>
-              {/* <div className="col-span-1">
-                <img
-                  className="object-fill w-full h-full"
-                  src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
-                />
-              </div> */}
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@ const navigation = {
 
 function Footer() {
   return (
-    <div className="p-4 text-gray-800 bg-white">
+    <div className="p-4 text-gray-800 bg-gray-100">
       <div className="flex py-2 mx-auto align-center max-w-7xl">
         <p className="mr-auto text-sm leading-8">
           &copy; 2023 Rich Ekelman. All rights reserved.
