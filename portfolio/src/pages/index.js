@@ -121,7 +121,7 @@ export default function Home({ projects }) {
                 />
               </div> */}
             </div>
-
+            {/* About Me Section */}
             <div className="flex flex-col justify-center w-3/4 mb-8 space-y-8 md:px-8 md:mb-0">
               <h2 className="mb-8 text-4xl">About Me</h2>
               <div className="">
