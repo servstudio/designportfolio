@@ -32,9 +32,9 @@ export default function Resume({ resume }) {
               </div>
 
               {/* Education section */}
-              <div className="flex flex-col">
-                <h3 className="text-xl font-black">Eductation</h3>
-                <div className="mb-8">
+              <div className="flex flex-col mt-0">
+                <h3 className="text-xl font-black">Education</h3>
+                <div className="my-8">
                   <h4 className="mr-2 font-bold">MFA Service Design</h4>
                   <h4 className="">Savannah College of Art & Design</h4>
                 </div>
