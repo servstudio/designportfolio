@@ -40,7 +40,7 @@ const ProjectDetails = ({ project }) => (
               </ul>
             </div>
           </div>
-          <div className="space-y-8 md:w-1/4">
+          <div className="space-y-8 md:w-1/4 md:mt-0">
             <div>
               <h3 className="text-xl font-black ">Methods</h3>
               <p>{project.methods}</p>
