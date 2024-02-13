@@ -3,10 +3,10 @@ import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
 const navigation = [
-  { name: "Home", href: "/", tabIndex: 0 },
-  { name: "About", href: "/#about-me", tabIndex: 1 },
-  { name: "Projects", href: "/projects", tabIndex: 2 },
-  { name: "Resume", href: "/resume", tabIndex: 3 },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/#about-me" },
+  { name: "Projects", href: "/projects" },
+  { name: "Resume", href: "/resume" },
 ]
 
 export default function NavBar() {
@@ -49,13 +49,15 @@ export default function NavBar() {
               key={item.name}
               href={item.href}
               className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-orange-800 hover:font-bold"
-              tabIndex={item.tabIndex} // Add tab index
+              tabIndex={0} // Add tab index
             >
               {item.name}
             </a>
           ))}
         </div>
       </nav>
+
+      {/* mobile menu start */}
       <Dialog
         as="div"
         className=":hidden"
@@ -86,8 +88,8 @@ export default function NavBar() {
             </button>
           </div>
           <div className="flow-root mt-6">
-            <div className="-my-6 divide-y divide-orange-500/25">
-              <div className="py-6 space-y-2 text-center">
+            <ul className="-my-6 divide-y divide-orange-500/25">
+              <li className="py-6 space-y-2 text-center">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -98,8 +100,8 @@ export default function NavBar() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </Dialog.Panel>
       </Dialog>
