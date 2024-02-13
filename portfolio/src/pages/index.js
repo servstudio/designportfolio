@@ -32,7 +32,7 @@ export default function Home({ projects }) {
         <p>
           View more{" "}
           <Link
-            className="text-orange-600 cursor-pointer hover:font-bold hover:underline"
+            className="text-orange-800 cursor-pointer hover:font-bold hover:underline"
             href="/projects"
           >
             projects
@@ -61,7 +61,7 @@ export default function Home({ projects }) {
                 </div>
                 <div>
                   <p
-                    className="text-orange-600 cursor-pointer hover:font-bold hover:underline"
+                    className="text-orange-800 cursor-pointer hover:font-bold hover:underline"
                     key={project.id}
                     href={`/${project.id}`}
                   >
