@@ -18,43 +18,45 @@ export default function NavBar() {
         className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <a
-            href="/"
-            className="-m-1.5 p-1.5 font-bold text-gray-800 hover:font-bold hover:text-orange-800"
-          >
-            <span className="sr-only">Rich Ekelman's Logo</span>
-            <img
-              className="w-8 h-8"
-              src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/1x_Logo-Dark.svg"
-              alt="Rich's Logo Mark"
-            />
-          </a>
-        </div>
-        <div className="flex md:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
-            onClick={() => setMobileMenuOpen(true)}
-            aria-label="Open main menu"
-            tabIndex={0}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="w-6 h-6" aria-hidden="true" />
-          </button>
-        </div>
-        <div className="hidden md:visible lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
+        <ul className="flex lg:flex-1">
+          <button className="flex mr-auto">
             <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-orange-800 hover:font-bold"
-              tabIndex={0} // Add tab index
+              href="/"
+              className="-m-1.5 p-1.5 font-bold text-gray-800 hover:font-bold hover:text-orange-800"
             >
-              {item.name}
+              <span className="sr-only">Rich Ekelman's Logo</span>
+              <img
+                className="w-8 h-8"
+                src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/1x_Logo-Dark.svg"
+                alt="Rich's Logo Mark"
+              />
             </a>
-          ))}
-        </div>
+          </button>
+          <li className="flex md:hidden">
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
+              onClick={() => setMobileMenuOpen(true)}
+              aria-label="Open main menu"
+              tabIndex={0}
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
+            </button>
+          </li>
+          <li className="hidden md:visible lg:flex lg:gap-x-12">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-orange-800 hover:font-bold"
+                tabIndex={0} // Add tab index
+              >
+                {item.name}
+              </a>
+            ))}
+          </li>
+        </ul>
       </nav>
 
       {/* mobile menu start */}
@@ -94,7 +96,7 @@ export default function NavBar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:text-orange-600 hover:text-decoration-underline"
+                    className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:text-orange-600 hover:text-decoration-underline focus:outline-none focus:ring-2 focus:ring-orange-500/50"
                     tabIndex={0} // Add tab index
                   >
                     {item.name}
