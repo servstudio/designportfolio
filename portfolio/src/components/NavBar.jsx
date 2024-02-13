@@ -3,10 +3,10 @@ import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/#about-me" },
-  { name: "Projects", href: "/projects" },
-  { name: "Resume", href: "/resume" },
+  { name: "Home", href: "/", tabIndex: 0 },
+  { name: "About", href: "/#about-me", tabIndex: 1 },
+  { name: "Projects", href: "/projects", tabIndex: 2 },
+  { name: "Resume", href: "/resume", tabIndex: 3 },
 ]
 
 export default function NavBar() {
@@ -19,7 +19,10 @@ export default function NavBar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5 font-bold text-gray-800">
+          <a
+            href="/"
+            className="-m-1.5 p-1.5 font-bold text-gray-800 hover:font-bold hover:text-orange-800"
+          >
             <span className="sr-only">Rich Ekelman's Logo</span>
             <img
               className="w-8 h-8"
@@ -33,6 +36,8 @@ export default function NavBar() {
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
             onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open main menu"
+            tabIndex={0}
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
@@ -43,7 +48,8 @@ export default function NavBar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-gray-800"
+              className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-orange-800 hover:font-bold"
+              tabIndex={item.tabIndex} // Add tab index
             >
               {item.name}
             </a>
@@ -72,6 +78,8 @@ export default function NavBar() {
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-white hover:text-orange-600 ml-auto"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Close menu"
+              tabIndex={0} // Add tab index
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="w-6 h-6" aria-hidden="true" />
@@ -85,6 +93,7 @@ export default function NavBar() {
                     key={item.name}
                     href={item.href}
                     className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-white rounded-lg hover:text-orange-600 hover:text-decoration-underline"
+                    tabIndex={0} // Add tab index
                   >
                     {item.name}
                   </a>
