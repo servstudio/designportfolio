@@ -19,7 +19,7 @@ export default function NavBar() {
         aria-label="Global"
       >
         <ul className="flex lg:flex-1">
-          <button className="flex mr-auto">
+          <button className="flex">
             <a
               href="/"
               className="-m-1.5 p-1.5 font-bold text-gray-800 hover:font-bold hover:text-orange-800"
@@ -44,7 +44,6 @@ export default function NavBar() {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </li>
-          <li className="hidden md:visible lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
