@@ -44,12 +44,12 @@ export default function NavBar() {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </li>
-          <li>
+          <li className="flex mr- ">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-orange-800 hover:font-bold"
+                className="mr-4 font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out text-md hover:text-orange-800 hover:font-bold"
                 tabIndex={0} // Add tab index
               >
                 {item.name}
