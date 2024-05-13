@@ -44,7 +44,7 @@ export default function NavBar() {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </li>
-          <li className="flex mr- ">
+          <li className="flex mr-auto sm:hidden">
             {navigation.map((item) => (
               <a
                 key={item.name}
