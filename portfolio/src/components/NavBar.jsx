@@ -32,7 +32,7 @@ export default function NavBar() {
               />
             </a>
           </button>
-          <li className="flex lg:hidden">
+          <li className="flex md:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
