@@ -18,7 +18,7 @@ export default function NavBar() {
         className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
       >
-        <ul className="flex lg:flex-1">
+        <ul className="flex items-center flex-1">
           <button className="flex mr-auto">
             <a
               href="/"
@@ -26,13 +26,13 @@ export default function NavBar() {
             >
               <span className="sr-only">Rich Ekelman's Logo</span>
               <img
-                className="w-8 h-8"
-                src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/1x_Logo-Dark.svg"
+                className="w-12 h-12"
+                src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/logo.svg"
                 alt="Rich's Logo Mark"
               />
             </a>
           </button>
-          <li className="flex md:hidden">
+          <li className="flex lg:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
