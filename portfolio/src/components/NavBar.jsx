@@ -44,7 +44,6 @@ export default function NavBar() {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </li>
-          <li className="hidden md:visible lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
