@@ -36,7 +36,7 @@ function Footer() {
     <div className="p-4 text-gray-800 bg-gray-100">
       <div className="flex py-2 mx-auto align-center max-w-7xl">
         <p className="mr-auto text-sm leading-8">
-          &copy; 2023 Rich Ekelman. All rights reserved.
+          &copy; 2024 Rich Ekelman. All rights reserved.
         </p>
         <div className="flex space-x-4">
           {navigation.social.map((item) => (

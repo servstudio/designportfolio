@@ -1,11 +1,11 @@
 import { supabase } from "@/utils/supabase"
-// import { Tab } from "@headlessui/react"
 import Link from "next/link"
+import { FaArrowRight } from "react-icons/fa"
 
 export default function Projects({ projects }) {
   return (
     <>
-      <header className="text-gray-800 bg-white max-w-60 h- ">
+      <header className=" max-w-60 h-">
         <div className="container px-4 py-12 mx-auto mb-12 md:max-w-7xl md:pl-8 max-w-7xl">
           <h2 className="px-4 mx-auto text-6xl md:px-4 font-regular">
             Projects
@@ -19,24 +19,24 @@ export default function Projects({ projects }) {
       >
         {projects.map((project) => (
           <Link key={project.id} href={`/${project.id}`}>
-            <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-white rounded-md group hover:shadow-xl hover:-translate-y-4">
+            <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-gray-100 rounded-md dark:bg-gray-800 group hover:shadow-xl hover:-translate-y-4">
               <img
                 className="object-cover w-full my-auto rounded-sm"
                 src={project.key_img}
                 alt={`${project.title} image`}
               ></img>
               <div className="pt-auto">
-                <h2 className="text-xl font-medium text-gray-800 capitalize">
+                <h2 className="text-xl font-medium capitalize">
                   {project.title}
                 </h2>
               </div>
-              <div>
+              <div className="flex ">
                 <p
-                  className="text-orange-800 cursor-pointer hover:font-bold hover:underline"
+                  className="flex items-center cursor-pointer text-sky-700 dark:text-orange-400 hover:font-bold hover:underline"
                   key={project.id}
                   href={`/${project.id}`}
                 >
-                  View Case Study{" "}
+                  View Case Study <FaArrowRight className="ml-1 hover:ml-2" />
                 </p>
               </div>
             </div>

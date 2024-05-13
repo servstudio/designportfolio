@@ -31,3 +31,13 @@ a {
     color-scheme: light;
   }
 }
+
+.light {
+  color: #030712;
+  background-color: white;
+}
+
+.dark {
+  color: white;
+  background-color: #030712;
+}

@@ -5,7 +5,7 @@ export default function Resume({ resume }) {
   return (
     <>
       <div className="space-y-12 ">
-        <header className="text-gray-800 bg-white max-w-60 ">
+        <header className=" max-w-60">
           <div className="container p-8 mx-auto mb-12 md:max-w-7xl">
             <h2 className="mx-auto text-6xl font-regular">Resume</h2>
           </div>
@@ -16,7 +16,7 @@ export default function Resume({ resume }) {
             {/* Experience section */}
             <div className="flex flex-col md:flex-row md:flex-shrink">
               <div className="pb-12 space-y-4 md:w-6/12 md:mr-12">
-                <h3 className="text-xl font-black">Experience</h3>
+                <h3 className="text-xl font-gray-900">Experience</h3>
 
                 {resume.map((role) => (
                   <div key={role.id[0]} className="pb-4">
@@ -34,7 +34,7 @@ export default function Resume({ resume }) {
 
               {/* Education section */}
               <div className="flex flex-col mt-0">
-                <h3 className="mb-4 text-xl font-black">Education</h3>
+                <h3 className="mb-4 text-xl font-gray-900">Education</h3>
                 <div className="mb-8">
                   <h4 className="mr-2 font-bold">MFA Service Design</h4>
                   <h4 className="">Savannah College of Art & Design</h4>

@@ -4,7 +4,7 @@ const ProjectDetails = ({ project }) => (
   <>
     <div className="pb-12 space-y-12">
       <div
-        className="bg-white bg-no-repeat h-96"
+        className="bg-no-repeat h-96"
         style={{
           backgroundImage: `url(${project.key_img})`,
           backgroundSize: "contain",
@@ -16,21 +16,21 @@ const ProjectDetails = ({ project }) => (
         <h1 className="text-4xl">{project.title}</h1>
         <div className="flex space-x-1 ">
           <p>{project.company}</p>
-          <p className="mb-8">{project.year}</p>
+          {/* <p className="mb-8">{project.year}</p> */}
         </div>
 
         <div className="flex flex-col lg:mb-8 md:flex-row md:justify-between">
           <div className="flex flex-col w-4/5 md:w-1/2">
             <div>
-              <h3 className="text-xl font-black">The Ask</h3>
+              <h3 className="text-xl font-gray-900">The Ask</h3>
               <p className="mb-8">{project.ask}</p>
             </div>
             <div className="">
-              <h3 className="text-xl font-black">Role</h3>
+              <h3 className="text-xl font-gray-900">Role</h3>
               <p className="mb-8">{project.role}</p>
             </div>
             <div>
-              <h3 className="text-xl font-black">Outcomes</h3>
+              <h3 className="text-xl font-gray-900">Outcomes</h3>
               <ul className="ml-4 space-y-2 list-disc">
                 <li>{project.outcome[0]}</li>
                 <li>{project.outcome[1]}</li>
@@ -42,11 +42,11 @@ const ProjectDetails = ({ project }) => (
           </div>
           <div className="mt-8 md:w-1/4 md:mt-0">
             <div className="mb-8 ">
-              <h3 className="text-xl font-black ">Methods</h3>
+              <h3 className="text-xl font-gray-900 ">Methods</h3>
               <p>{project.methods}</p>
             </div>
             <div>
-              <h3 className="text-xl font-black">Tools</h3>
+              <h3 className="text-xl font-gray-900">Tools</h3>
               <p>{project.tools}</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const ProjectDetails = ({ project }) => (
         ) : (
           <>
             <div
-              className="mt-12 bg-gray-200 bg-no-repeat h-96"
+              className="mt-12 bg-no-repeat h-96"
               style={{
                 backgroundImage: `url(${project.process_img[0]})`,
                 backgroundSize: "contain",
@@ -68,7 +68,7 @@ const ProjectDetails = ({ project }) => (
             ></div>
 
             <div
-              className="mt-12 bg-gray-200 bg-no-repeat h-96"
+              className="mt-12 bg-no-repeat h-96"
               style={{
                 backgroundImage: `url(${project.process_img[1]})`,
                 backgroundSize: "contain",
@@ -79,7 +79,7 @@ const ProjectDetails = ({ project }) => (
         )}
 
         <div className="w-full max-w-7xl md:w-4/5">
-          <h3 className="text-xl font-black">Key Learning</h3>
+          <h3 className="text-xl font-gray-900">Key Learning</h3>
           <p>{project.keylearning}</p>
         </div>
       </div>
