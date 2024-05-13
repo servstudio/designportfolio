@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
@@ -32,24 +32,23 @@ export default function NavBar() {
               />
             </a>
           </button>
-          <li className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
-              onClick={() => setMobileMenuOpen(true)}
-              aria-label="Open main menu"
-              tabIndex={0}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
-            </button>
-          </li>
-          <li className="flex mr-auto md:visible">
+
+          <button
+            type="button"
+            className="md:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
+            onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open main menu"
+            tabIndex={0}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="w-6 h-6" aria-hidden="true" />
+          </button>
+          <li className="hidden md:block">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="mr-4 font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out text-md hover:text-orange-800 hover:font-bold"
+                className="mr-4 font-semibold leading-6 text-gray-800 transition duration-300 ease-in-out hover:text-orange-800 hover:font-bold"
                 tabIndex={0} // Add tab index
               >
                 {item.name}
@@ -80,7 +79,7 @@ export default function NavBar() {
             </a> */}
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-white hover:text-orange-600 ml-auto"
+              className="-m-</div>2.5 rounded-md p-2.5 text-white hover:text-orange-600 ml-auto"
               onClick={() => setMobileMenuOpen(false)}
               aria-label="Close menu"
               tabIndex={0} // Add tab index
@@ -89,7 +88,7 @@ export default function NavBar() {
               <XMarkIcon className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="flow-root mt-6">
+          <div className="flow-root mt-">
             <ul className="-my-6 divide-y divide-orange-500/25">
               <li className="py-6 space-y-2 text-center">
                 {navigation.map((item) => (
