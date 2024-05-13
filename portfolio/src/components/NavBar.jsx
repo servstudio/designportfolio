@@ -32,7 +32,7 @@ export default function NavBar() {
               />
             </a>
           </button>
-          <li className="flex md:hidden">
+          <li className="flex lg:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
@@ -44,7 +44,7 @@ export default function NavBar() {
               <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </li>
-          <li className="flex mr-auto sm:hidden">
+          <li className="flex mr-auto md:visible">
             {navigation.map((item) => (
               <a
                 key={item.name}
