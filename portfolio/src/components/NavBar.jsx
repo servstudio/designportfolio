@@ -46,8 +46,8 @@ export default function NavBar() {
             >
               <span className="sr-only">Rich Ekelman's Logo</span>
               <img
-                className="w-12 h-12"
                 height={48}
+                width={48}
                 src={
                   theme === "light"
                     ? "https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/logo.svg"
