@@ -44,7 +44,7 @@ export default function NavBar() {
               href="/"
               className="-m-1.5 p-1.5 font-bold text-black hover:font-bold hover:text-orange-400"
             >
-              <span className="sr-only">Rich Ekelman's Logo</span>
+              <span className="sr-only">Rich Ekelman Logo Mark</span>
               <img
                 className="w-12 h-12"
                 src={

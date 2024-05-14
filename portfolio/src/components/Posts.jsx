@@ -62,7 +62,11 @@ export default function Posts() {
                 </div>
                 <div className="items-stretch Flex">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-sky-700 dark:text-orange-400 group-hover:font-bold group-hover:underline">
-                    <a href={post.href}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={post.href}
+                    >
                       <span className="mb-auto" />
                       {post.title}
                     </a>
