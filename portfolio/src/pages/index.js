@@ -5,7 +5,7 @@ import { Z_FULL_FLUSH } from "zlib"
 import { FaArrowRight } from "react-icons/fa"
 import Posts from "@/components/Posts"
 
-export default function Home({ projects }) {
+export default function Home({ projects, posts }) {
   return (
     <>
       {/* =======Hero======= */}
@@ -16,12 +16,6 @@ export default function Home({ projects }) {
               <h1 className="text-4xl font-bold md:text-6xl">Rich Ekelman</h1>
               <p>Research, strategy, and design.</p>
             </div>
-            {/* <div className="w-3/4 h-auto md:visible md:w-1/2">
-              <img
-                className="object-cover w-full h-full "
-                src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/hero-sketch.JPG"
-              />
-            </div>{" "} */}
           </div>
         </div>
       </div>

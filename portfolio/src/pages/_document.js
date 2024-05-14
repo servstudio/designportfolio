@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Service Design Portfolio</title>
+        {/* <title>Service Design Portfolio</title>
         <meta
           name="description"
           content="Richard Ekelman's professional service design portfolio."
@@ -13,7 +13,7 @@ export default function Document() {
           charSet="utf-8"
           name="viewport"
           content="width=device-width, initial-scale=1"
-        />
+        /> */}
         <link rel="icon" href="../../public/flavicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

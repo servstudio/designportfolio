@@ -94,7 +94,7 @@ export default function NavBar() {
             ) : (
               <span className="pointer-events-none inline-block size-6 translate-x-0 rounded-full ring-0 shadow-lg transition duration-500 ease-in-out group-data-[checked]:translate-x-6 ml-auto p-1">
                 <MoonIcon
-                  className="w-6 h-6 ml-auto fill-black stroke-black"
+                  className="w-6 h-6 ml-auto fill-gray-900 stroke-gray-900"
                   aria-hidden="true"
                 />
               </span>
