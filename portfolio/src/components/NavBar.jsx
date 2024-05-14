@@ -7,7 +7,6 @@ import {
   MoonIcon,
 } from "@heroicons/react/24/outline"
 import Link from "next/link"
-import Image from "next/image"
 
 const navigation = [
   { name: "Home", href: "/", tab: 0 },
@@ -46,8 +45,9 @@ export default function NavBar() {
               className="-m-1.5 p-1.5 font-bold text-black hover:font-bold hover:text-orange-400 dark:text-white"
             >
               <span className="sr-only">Rich Ekelman's Logo</span>
-              <Image
+              <img
                 className="w-12 h-12"
+                height={48}
                 src={
                   theme === "light"
                     ? "https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/logo.svg"
