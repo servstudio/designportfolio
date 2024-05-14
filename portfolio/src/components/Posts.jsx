@@ -58,9 +58,7 @@ export default function Posts() {
               </div>
               <div className="flex flex-col items-baseline max-w-xl align-top">
                 <div className="flex items-center mt-8 text-xs gap-x-4">
-                  <time dateTime={post.datetime} className="">
-                    {post.date}
-                  </time>
+                  <time dateTime={post.datetime}>{post.date}</time>
                 </div>
                 <div className="items-stretch Flex">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-sky-700 dark:text-orange-400 group-hover:font-bold group-hover:underline">
