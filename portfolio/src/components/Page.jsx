@@ -12,10 +12,7 @@ function Page({ children }) {
           content="Professional service design portfolio"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          href="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/logo.svg"
-        />
+        <link rel="icon" href="/public/favicon.png" />
       </Head>
       <header>
         <NavBar />
