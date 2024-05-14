@@ -42,7 +42,7 @@ export default function Home({ projects, posts }) {
           project.featured ? (
             <Link key={project.id} href={`/${project.id}`}>
               <div className="flex flex-col h-full p-8 mb-8 duration-300 ease-in-out bg-gray-100 rounded-md dark:bg-gray-800 group hover:shadow-xl hover:-translate-y-4">
-                <Image
+                <img
                   className="object-cover w-full my-auto rounded-sm"
                   src={project.key_img}
                   alt={`${project.title} image`}
