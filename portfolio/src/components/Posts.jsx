@@ -14,22 +14,22 @@ const posts = [
   {
     id: 2,
     title: "How Service Design Extends Other Disciplines",
-    href: "#",
+    href: "https://medium.com/seven-two-four/in-early-december-i-had-the-opportunity-to-speak-to-the-service-design-networks-community-in-d-c-4ca8a8dfac93",
     description:
       "Service design is not different from other disciplines, but rather a cross-disciplinary extension.",
     imageUrl:
-      "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
+      "https://miro.medium.com/v2/resize:fit:1280/format:webp/0*UxnLwOYIuMl9lVHy.jpg",
     date: "January 2019",
     datetime: "2019-01-31",
   },
   {
     id: 3,
     title: "Three Reasons Homegrown Service Design Might Be the Best Start",
-    href: "#",
+    href: "https://medium.com/@richekelman/three-reasons-homegrown-service-design-might-be-the-best-start-ff3ede9fa6be",
     description:
       "Service design is not different from other disciplines, but rather a cross-disciplinary extension.",
     imageUrl:
-      "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
+      "https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/Change%20Management%20Image",
     date: "August 2017",
     datetime: "2017-08-30",
   },
