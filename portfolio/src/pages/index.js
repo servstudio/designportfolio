@@ -78,28 +78,28 @@ export default function Home({ projects, posts }) {
               {/* Image Grid Gallery */}
 
               <div className="col-span-4 md:col-span-2">
-                <Image
-                  className="object-cover w-full h-full"
+                className="object-cover w-full h-full"
+                <img
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/ACNM-miro.png"
                   alt="An Actor Network Map created in Miro"
                 />
               </div>
               <div className="col-span-2">
-                <Image
+                <img
                   className="object-cover w-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
                   alt="A man making french baggettes in his kitchen."
                 />
               </div>
               <div className="col-span-2">
-                <Image
+                <img
                   className="object-cover w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/X%20Lab%20Process%201"
                   alt="Image of a design workshop with a man standing next to a whiteboard."
                 />
               </div>
               <div className="col-span-4 md:col-span-2">
-                <Image
+                <img
                   className="object-cover"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_1754.JPG"
                   alt="A woman kneeling down to take a picture next to her dog."
