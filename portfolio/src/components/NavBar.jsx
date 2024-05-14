@@ -22,11 +22,6 @@ export default function NavBar() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
   }
 
-  // useEffect(() => {
-  //   document.body.className = ""
-  //   document.body.classList.add(theme)
-  // }, [theme])
-
   const [enabled, setEnabled] = useState(false)
   useEffect(() => {
     if (enabled) {
@@ -127,15 +122,6 @@ export default function NavBar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-3/4 px-8 py-6 overflow-y-auto bg-black dark:bg-gray-200 dark:text-black sm:max-w-sm sm:ring-1 sm:ring-white">
           <div className="flex items-right">
-            {/* <a href="/" className="-m-1.5 p-1.5 font-bold text-black">
-              <span className="sr-only">Rich Ekelman's logo</span>
-              <img
-                className="w-auto h-16"
-                src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/icon-dark.png?t=2023-03-26T18%3A50%3A59.626Z"
-                alt="Rich's Logo Mark"
-              />
-              Rich Ekelman
-            </a> */}
             <button
               type="button"
               className="-m-</div>2.5 rounded-md p-2.5 text-white dark:text-black hover:text-orange-400 ml-auto"

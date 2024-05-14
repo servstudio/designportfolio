@@ -17,7 +17,7 @@ function Page({ children }) {
       <header>
         <NavBar />
       </header>
-      <main className="min-h-screen space-y-8">{children}</main>
+      <main className="min-h-screen Space-y-8 lg:space-y-6">{children}</main>
       <footer>
         <Footer />
       </footer>
