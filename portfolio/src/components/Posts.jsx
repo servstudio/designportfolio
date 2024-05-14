@@ -40,8 +40,8 @@ export default function Posts() {
     <div className="py-24 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl text-gray-900 sm:text-4xl">Writing</h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
+          <h2 className="text-2xl sm:text-4xl">Writing</h2>
+          <p className="mt-2 text-lg leading-8">
             My thoughts on design, research, and strategy.{" "}
           </p>
         </div>

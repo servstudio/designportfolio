@@ -10,7 +10,7 @@ export default function Home({ projects, posts }) {
       {/* =======Hero======= */}
       <div className="h-auto px-4">
         <div className="container items-center mx-auto">
-          <div className="flex items-center p-16 align-middle justify-left">
+          <div className="flex items-center py-16 align-middle justify-left">
             <div className="flex-col px-4">
               <h1 className="text-4xl font-bold md:text-6xl">Rich Ekelman</h1>
               <p>Research, strategy, and design.</p>

@@ -33,9 +33,9 @@ export default function NavBar() {
   }, [enabled])
 
   return (
-    <header className="dark:bg-none">
+    <header className="">
       <nav
-        className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
+        className="container flex items-center justify-between p-6 mx-auto lg:px-8"
         aria-label="Global"
       >
         <ul className="flex items-center flex-1">
