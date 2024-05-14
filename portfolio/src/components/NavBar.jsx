@@ -39,7 +39,6 @@ export default function NavBar() {
         aria-label="Global"
       >
         <ul className="flex items-center flex-1">
-          import Link from "next/link"
           <button className="flex mr-auto">
             <Link
               href="/"
