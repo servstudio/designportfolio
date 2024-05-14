@@ -14,9 +14,8 @@ const ProjectDetails = ({ project }) => (
 
       <div className="container px-8 py-8 mx-auto space-y-8 max-w-7xl">
         <h1 className="text-4xl">{project.title}</h1>
-        <div className="flex space-x-1 ">
+        <div className="flex">
           <p>{project.company}</p>
-          {/* <p className="mb-8">{project.year}</p> */}
         </div>
 
         <div className="flex flex-col lg:mb-8 md:flex-row md:justify-between">
