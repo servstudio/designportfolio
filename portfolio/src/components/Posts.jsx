@@ -10,9 +10,6 @@ const posts = [
       "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
     date: "December 2017",
     datetime: "2017-12-21",
-    href: "#",
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
   },
   {
     id: 2,
@@ -24,9 +21,6 @@ const posts = [
       "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
     date: "January 2019",
     datetime: "2019-01-31",
-    href: "https://medium.com/seven-two-four/in-early-december-i-had-the-opportunity-to-speak-to-the-service-design-networks-community-in-d-c-4ca8a8dfac93",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
     id: 3,
@@ -38,9 +32,6 @@ const posts = [
       "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
     date: "August 2017",
     datetime: "2017-08-30",
-    href: "https://medium.com/@richekelman/three-reasons-homegrown-service-design-might-be-the-best-start-ff3ede9fa6be",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
 ]
 
