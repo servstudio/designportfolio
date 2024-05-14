@@ -78,8 +78,8 @@ export default function Home({ projects, posts }) {
               {/* Image Grid Gallery */}
 
               <div className="col-span-4 md:col-span-2">
-                className="object-cover w-full h-full"
                 <img
+                  className="object-cover w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/ACNM-miro.png"
                   alt="An Actor Network Map created in Miro"
                 />
