@@ -54,7 +54,7 @@ export default function Posts() {
                   alt={`${post.title} image`}
                   className="aspect-[16/9] w-full rounded-md bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 />
-                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+                <div className="rounded-2xl ring-1 ring-inset ring-gray-900/10" />
               </div>
               <div className="flex flex-col items-baseline max-w-xl align-top">
                 <div className="flex items-center mt-8 text-xs gap-x-4">
@@ -63,7 +63,7 @@ export default function Posts() {
                 <div className="items-stretch Flex">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-sky-700 dark:text-orange-400 group-hover:font-bold group-hover:underline">
                     <a href={post.href}>
-                      <span className="absolute inset-0 mb-auto" />
+                      <span className="mb-auto" />
                       {post.title}
                     </a>
                   </h3>
