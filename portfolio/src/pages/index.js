@@ -42,11 +42,11 @@ export default function Home({ projects, posts }) {
           project.featured ? (
             <Link key={project.id} href={`/${project.id}`}>
               <div className="flex flex-col h-full p-8 mb-8 duration-300 ease-in-out bg-gray-100 rounded-md dark:bg-gray-800 group hover:shadow-xl hover:-translate-y-4">
-                <img
+                <Image
                   className="object-cover w-full my-auto rounded-sm"
                   src={project.key_img}
                   alt={`${project.title} image`}
-                ></img>
+                />
                 <div className="pt-auto">
                   <h2 className="text-xl font-medium capitalize">
                     {project.title}
@@ -78,35 +78,35 @@ export default function Home({ projects, posts }) {
               {/* Image Grid Gallery */}
 
               <div className="col-span-4 md:col-span-2">
-                <img
+                <Image
                   className="object-cover w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/ACNM-miro.png"
                   alt="An Actor Network Map created in Miro"
                 />
               </div>
               <div className="col-span-2">
-                <img
+                <Image
                   className="object-cover w-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
                   alt="A man making french baggettes in his kitchen."
                 />
               </div>
               <div className="col-span-2">
-                <img
+                <Image
                   className="object-cover w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/X%20Lab%20Process%201"
                   alt="Image of a design workshop with a man standing next to a whiteboard."
                 />
               </div>
               <div className="col-span-4 md:col-span-2">
-                <img
+                <Image
                   className="object-cover"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_1754.JPG"
                   alt="A woman kneeling down to take a picture next to her dog."
                 />
               </div>
               {/* <div className="col-span-1">
-                <img
+                <Image
                   className="object-fill w-full h-full"
                   src="https://lngphvwiruyfwvdkclxc.supabase.co/storage/v1/object/public/images/images/IMG_0413.jpeg"
                 />

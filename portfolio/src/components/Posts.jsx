@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const posts = [
   {
     id: 1,
@@ -49,7 +51,7 @@ export default function Posts() {
           {posts.map((post) => (
             <article key={post.id} className="">
               <div className="relative w-full">
-                <img
+                <Image
                   src={post.imageUrl}
                   alt={`${post.title} image`}
                   className="aspect-[16/9] w-full rounded-md bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"

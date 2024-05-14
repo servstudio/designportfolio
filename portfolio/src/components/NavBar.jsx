@@ -6,6 +6,8 @@ import {
   SunIcon,
   MoonIcon,
 } from "@heroicons/react/24/outline"
+import Link from "next/link"
+import Image from "next/image"
 
 const navigation = [
   { name: "Home", href: "/", tab: 0 },
@@ -39,12 +41,12 @@ export default function NavBar() {
       >
         <ul className="flex items-center flex-1">
           <button className="flex mr-auto">
-            <a
+            <Link
               href="/"
               className="-m-1.5 p-1.5 font-bold text-black hover:font-bold hover:text-orange-400 dark:text-white"
             >
               <span className="sr-only">Rich Ekelman's Logo</span>
-              <img
+              <Image
                 className="w-12 h-12"
                 src={
                   theme === "light"
@@ -53,7 +55,7 @@ export default function NavBar() {
                 }
                 alt="Rich's Logo Mark"
               />
-            </a>
+            </Link>
           </button>
 
           <li className="hidden md:block">

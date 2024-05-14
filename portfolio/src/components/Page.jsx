@@ -6,7 +6,7 @@ function Page({ children }) {
   return (
     <>
       <Head>
-        <title>Rich's Portfolio</title>
+        <title>Rich Ekelman Portfolio</title>
         <meta
           name="description"
           content="Professional service design portfolio"
