@@ -1,7 +1,6 @@
 import { supabase } from "@/utils/supabase"
 import Image from "next/image"
 import Link from "next/link"
-import { Z_FULL_FLUSH } from "zlib"
 import { FaArrowRight } from "react-icons/fa"
 import Posts from "@/components/Posts"
 
@@ -147,8 +146,7 @@ export default function Home({ projects, posts }) {
       </section>
 
       {/* =======Posts======= */}
-
-      {/* <Posts /> */}
+      <Posts />
     </>
   )
 }

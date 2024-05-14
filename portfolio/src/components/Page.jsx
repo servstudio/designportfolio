@@ -12,7 +12,7 @@ function Page({ children }) {
           content="Professional service design portfolio"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/flavicon.png" />
+        <link rel="icon" href="/../public/flavicon.png" />
       </Head>
       <header>
         <NavBar />
