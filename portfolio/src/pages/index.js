@@ -74,7 +74,7 @@ export default function Home({ projects, posts }) {
         <div className="h-auto mx-auto max-w-7xl">
           <h2 className="mb-8 text-4xl md:hidden">About Me</h2>
           <div className="grid gap-8 md:grid-cols-2">
-            <div class="grid grid-cols-4 grid-row-3 gap-4">
+            <div className="grid grid-cols-4 gap-4 grid-row-3">
               {/* Image Grid Gallery */}
 
               <div className="col-span-4 md:col-span-2">
@@ -115,7 +115,7 @@ export default function Home({ projects, posts }) {
 
             <div className="flex flex-col justify-center w-4/5 mb-8 space-y-8 md:px-8 md:mb-0">
               <h2 className="hidden mb-8 text-4xl md:block">About Me</h2>
-              <div className="">
+              <div>
                 <h3 className="text-xl ">At Work</h3>
                 <p>
                   I like to help make complex decisions feel easier to
