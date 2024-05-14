@@ -3,14 +3,14 @@ const posts = [
     id: 1,
     title:
       "5 Reasons Storyboards Should Be Your First Service Design Prototype",
-    href: "#",
+    href: "https://medium.com/seven-two-four/5-reasons-storyboards-should-be-your-first-service-design-prototype-34a377a64f0e",
     description:
       "Focus on the story, the service will come. Storyboards make for a more informed first prototype. They create an active way to transition from understanding the present to shaping the future.",
     imageUrl:
       "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
     date: "December 2017",
     datetime: "2017-12-21",
-    href: "https://medium.com/seven-two-four/5-reasons-storyboards-should-be-your-first-service-design-prototype-34a377a64f0e",
+    href: "#",
     imageUrl:
       "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1F-zdShghxgi8HOuJe-c1w.jpeg",
   },

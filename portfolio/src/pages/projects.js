@@ -1,6 +1,7 @@
 import { supabase } from "@/utils/supabase"
 import Link from "next/link"
 import { FaArrowRight } from "react-icons/fa"
+import Tabs from "@/components/Tabs"
 
 export default function Projects({ projects }) {
   return (
@@ -43,6 +44,8 @@ export default function Projects({ projects }) {
           </Link>
         ))}
       </div>
+
+      <Tabs />
     </>
   )
 }

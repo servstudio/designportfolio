@@ -148,7 +148,7 @@ export default function Home({ projects, posts }) {
 
       {/* =======Posts======= */}
 
-      <Posts />
+      {/* <Posts /> */}
     </>
   )
 }
