@@ -39,10 +39,11 @@ export default function NavBar() {
         aria-label="Global"
       >
         <ul className="flex items-center flex-1">
+          import Link from "next/link"
           <button className="flex mr-auto">
             <Link
               href="/"
-              className="-m-1.5 p-1.5 font-bold text-black hover:font-bold hover:text-orange-400 dark:text-white"
+              className="-m-1.5 p-1.5 font-bold text-black hover:font-bold hover:text-orange-400"
             >
               <span className="sr-only">Rich Ekelman's Logo</span>
               <img
@@ -57,7 +58,6 @@ export default function NavBar() {
               />
             </Link>
           </button>
-
           <li className="hidden md:block">
             {navigation.map((item) => (
               <a
@@ -70,7 +70,6 @@ export default function NavBar() {
               </a>
             ))}
           </li>
-
           <Switch
             onClick={toggleTheme}
             checked={enabled}
@@ -97,7 +96,6 @@ export default function NavBar() {
               </span>
             )}
           </Switch>
-
           <button
             type="button"
             className="md:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ml-0"

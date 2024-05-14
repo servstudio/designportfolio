@@ -1,7 +1,7 @@
 import { supabase } from "@/utils/supabase"
 import Link from "next/link"
 import { FaArrowRight } from "react-icons/fa"
-import Image from "next/image"
+// import Image from "next/image"
 
 export default function Projects({ projects }) {
   return (
@@ -21,7 +21,7 @@ export default function Projects({ projects }) {
         {projects.map((project) => (
           <Link key={project.id} href={`/${project.id}`}>
             <div className="flex flex-col h-full p-4 duration-300 ease-in-out bg-gray-100 rounded-md dark:bg-gray-800 group hover:shadow-xl hover:-translate-y-4">
-              <Image
+              <img
                 className="object-cover w-full my-auto rounded-sm"
                 src={project.key_img}
                 alt={`${project.title} image`}
