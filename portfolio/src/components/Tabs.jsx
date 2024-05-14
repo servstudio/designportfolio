@@ -137,7 +137,7 @@ export default function Example() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                "rounded-md bg-white p-4 space-y-4 "
+                "rounded-md p-4 space-y-4 "
                 // "ring-offset-2 ring-offset-orange-600 focus:outline-none focus:ring-2"
               )}
             >
@@ -145,9 +145,7 @@ export default function Example() {
                 {phases.map((phase) => (
                   <li key={phase.id} className="relative p-3">
                     <h3 className="font-bold leading-5">{phase.header}</h3>
-                    <p className="mt-2 text-sm text-gray-800">
-                      {phase.content}
-                    </p>
+                    <p className="mt-2 text-sm">{phase.content}</p>
                   </li>
                 ))}
               </ul>
